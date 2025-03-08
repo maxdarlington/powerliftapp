@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerlifting App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wilks Score Calculator</h1>
+        
+        <form id="wilksForm">
+            <label for="total">Total (kg):</label>
+            <input type="number" id="total" required>
+
+            <label for="bodyweight">Bodyweight (kg):</label>
+            <input type="number" id="bodyweight" required>
+
+            <div class="dropdown">
+                <button type="button" class="dropbtn">Gender</button>
+                <div class="dropdown-content">
+                    <button type="button" id="maleLink">Male</button>
+                    <button type="button" id="femaleLink">Female</button>                    
+                </div>
+            </div>
+        </form>
+
+        <div id="score">
+            <h2>Score:</h2>
+            <p id="score"></p>
+        </div>
+    </div>
+    <script src="WilksScore.js"></script>
+</body>
+</html>

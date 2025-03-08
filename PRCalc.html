@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerlifting App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>One-Rep Max (1RM) Calculator</h1>
+        
+        <form id="rmForm">
+            <label for="weight">Weight Lifted (kg):</label>
+            <input type="number" id="weight" required>
+
+            <label for="reps">Repetitions:</label>
+            <input type="number" id="reps" required>
+
+            <div class="dropdown">
+                <button type="button" class="dropbtn">Choose Formula</button>
+                <div class="dropdown-content">
+                    <button type="button" id="epleyLink">Epley Formula</button>
+                    <button type="button" id="brzyckiLink">Brzycki Formula</button>                    
+                </div>
+            </div>
+        </form>
+
+        <div id="results">
+            <h2>Results:</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="PRCalc.js"></script>
+</body>
+</html>
